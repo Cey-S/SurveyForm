@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>PetAdoptionForm</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="survey-container">
+      <header class="survey-header">
+        <h1 id="title">Pet Adoption Form</h1>
+        <p id="description"><em>Please fill out this form for us to match you with your dream pet!</em></p>
+      </header>
+      <form id="survey-form">
+        <fieldset id="personal-info">
+          <legend>Personal Information</legend>
+          <label id="name-label" for="name">Name:</label>
+          <Input class="input-field" id="name" type="text" placeholder="Enter your name" required>
+
+          <label id="email-label" for="email">Email:</label>
+          <Input class="input-field" id="email" type="email" placeholder="Enter your Email" required>
+
+          <label id="number-label" for="number">Age:</label>
+          <Input class="input-field" id="number" type="number" min="18" max="100" placeholder="Enter your age">
+          <div class="choice-question">
+            <p>What type of housing do you live in?</p>
+            <select class="input-field" id="dropdown">
+              <option disabled selected value="">Select housing</option>
+              <option value="apartment-owned">Apartment (owned)</option>
+              <option value="house-owned">House (owned)</option>
+              <option value="apartment-rented">Apartment (rented)</option>
+              <option value="house-rented">House (rented)</option>
+              <option value="other">Other</option>
+            </select>
+          </div>          
+        </fieldset>
+        <fieldset id="adoption-info">
+          <legend>Adoption Information</legend>
+          <div class="choice-question">
+            <p>Which type of pet do you want to adopt?</p>
+            <label><input name="pet-type" type="radio" value="cat" checked>Cat</label>
+            <label><input name="pet-type" type="radio" value="dog">Dog</label>
+            <label><input name="pet-type" type="radio" value="other">Other</label>
+          </div>
+          <div class="choice-question">
+            <p>What attributes do you want your pet to have?</p>
+            <label><input type="checkbox" value="playful">Playful</label>
+            <label><input type="checkbox" value="sociable">Sociable</label>
+            <label><input type="checkbox" value="energetic">Energetic</label>
+            <label><input type="checkbox" value="silent">Silent</label>
+            <label><input type="checkbox" value="affectionate">Affectionate</label>
+            <label><input type="checkbox" value="intelligent">Intelligent</label>
+            <label><input type="checkbox" value="independent">Independent</label>
+            <label><input type="checkbox" value="couch-potato">Couch Potato</label>
+          </div>
+          <div class="choice-question">
+            <p>Why did you decide to adopt?</p>
+            <textarea class="input-field" name="decision" placeholder="Tell us about your decision here..."></textarea>
+          </div>         
+        </fieldset>
+        <button type="submit" id="submit" class="submit-button ">Submit</button>
+      </form>
+    </div>
+    <footer>
+      <p><a href="https://www.freepik.com/free-vector/colorful-dog-cat-paw-prints-pattern-background_13124485.htm#query=pet&position=7&from_view=search&track=sph&uuid=5381c7af-dfed-408d-819c-f8c0df5bfdc0">Image by starline</a> on Freepik</p>
+    </footer>
+  </body>
+</html>
